@@ -1,0 +1,1619 @@
+2019-10-18 14:21:53.909  INFO 1908 --- [main] h.r.KafkaSinkMain                        : Starting KafkaSinkMain on PUNITP322464D with PID 1908 (D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink\target\classes started by harshatej.rane in D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink)
+2019-10-18 14:21:53.915  INFO 1908 --- [main] h.r.KafkaSinkMain                        : No active profile set, falling back to default profiles: default
+2019-10-18 14:21:54.092  INFO 1908 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@347ee438: startup date [Fri Oct 18 14:21:54 IST 2019]; root of context hierarchy
+2019-10-18 14:21:56.691  INFO 1908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$c24e642c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 14:21:57.007  INFO 1908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee9c52a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 14:21:57.457  INFO 1908 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 14:21:57.467  INFO 1908 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-10-18 14:21:57.469  INFO 1908 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-10-18 14:21:57.682  INFO 1908 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-18 14:21:57.683  INFO 1908 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3591 ms
+2019-10-18 14:21:57.974  INFO 1908 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-18 14:21:57.978  INFO 1908 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-18 14:21:57.979  INFO 1908 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-18 14:21:57.980  INFO 1908 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-18 14:21:57.981  INFO 1908 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-18 14:21:58.060  WARN 1908 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+2019-10-18 14:21:58.064  INFO 1908 --- [main] o.a.c.c.StandardService                  : Stopping service Tomcat
+2019-10-18 14:21:58.115  INFO 1908 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-10-18 14:21:58.124 ERROR 1908 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081) ~[spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856) ~[spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) ~[spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at harsh.rane.KafkaSinkMain.main(KafkaSinkMain.java:11) [classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	... 28 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	... 28 more
+Caused by: java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.util.Assert.state(Assert.java:70) ~[spring-core-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:231) ~[spring-boot-autoconfigure-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:183) ~[spring-boot-autoconfigure-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:42) ~[spring-boot-autoconfigure-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat.dataSource(DataSourceConfiguration.java:56) ~[spring-boot-autoconfigure-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_202]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	... 28 more
+
+2019-10-18 14:23:29.275  INFO 5944 --- [main] h.r.KafkaSinkMain                        : Starting KafkaSinkMain on PUNITP322464D with PID 5944 (D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink\target\classes started by harshatej.rane in D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink)
+2019-10-18 14:23:29.282  INFO 5944 --- [main] h.r.KafkaSinkMain                        : No active profile set, falling back to default profiles: default
+2019-10-18 14:23:29.409  INFO 5944 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b8084a7b: startup date [Fri Oct 18 14:23:29 IST 2019]; root of context hierarchy
+2019-10-18 14:23:32.015  INFO 5944 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$8afde407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 14:23:32.349  INFO 5944 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b74bd284] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 14:23:32.786  INFO 5944 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 14:23:32.827  INFO 5944 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-10-18 14:23:32.829  INFO 5944 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-10-18 14:23:33.101  INFO 5944 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-18 14:23:33.102  INFO 5944 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3699 ms
+2019-10-18 14:23:33.502  INFO 5944 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-18 14:23:33.508  INFO 5944 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-18 14:23:33.509  INFO 5944 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-18 14:23:33.510  INFO 5944 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-18 14:23:33.511  INFO 5944 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-18 14:23:36.085  INFO 5944 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-10-18 14:23:36.098  INFO 5944 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-18 14:23:36.180  INFO 5944 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2019-10-18 14:23:36.183  INFO 5944 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-10-18 14:23:36.186  INFO 5944 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2019-10-18 14:23:36.240  INFO 5944 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-10-18 14:23:36.371  INFO 5944 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-10-18 14:23:36.652  INFO 5944 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-10-18 14:23:36.654  INFO 5944 --- [main] o.h.t.BasicTypeRegistry                  : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@8ff1ef31
+2019-10-18 14:23:36.780  WARN 5944 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: harsh.rane.model.FullPatientDetails
+2019-10-18 14:23:36.791  INFO 5944 --- [main] o.a.c.c.StandardService                  : Stopping service Tomcat
+2019-10-18 14:23:36.812  INFO 5944 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-10-18 14:23:36.855 ERROR 5944 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: harsh.rane.model.FullPatientDetails
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081) ~[spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856) ~[spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) ~[spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at harsh.rane.KafkaSinkMain.main(KafkaSinkMain.java:11) [classes/:?]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: harsh.rane.model.FullPatientDetails
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:265) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:717) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:245) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:222) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:265) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) ~[spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) ~[spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) ~[spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) ~[spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	... 16 more
+
+2019-10-18 14:29:44.909  INFO 15820 --- [main] h.r.KafkaSinkMain                        : Starting KafkaSinkMain on PUNITP322464D with PID 15820 (D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink\target\classes started by harshatej.rane in D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink)
+2019-10-18 14:29:44.927  INFO 15820 --- [main] h.r.KafkaSinkMain                        : No active profile set, falling back to default profiles: default
+2019-10-18 14:29:45.246  INFO 15820 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48197fb8: startup date [Fri Oct 18 14:29:45 IST 2019]; root of context hierarchy
+2019-10-18 14:29:48.056  INFO 15820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$2c4172ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 14:29:48.316  INFO 15820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$588f614b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 14:29:48.850  INFO 15820 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 14:29:48.859  INFO 15820 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-10-18 14:29:48.861  INFO 15820 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-10-18 14:29:49.044  INFO 15820 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-18 14:29:49.045  INFO 15820 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3830 ms
+2019-10-18 14:29:49.333  INFO 15820 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-18 14:29:49.337  INFO 15820 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-18 14:29:49.338  INFO 15820 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-18 14:29:49.339  INFO 15820 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-18 14:29:49.339  INFO 15820 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-18 14:29:52.148  INFO 15820 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-10-18 14:29:52.163  INFO 15820 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-18 14:29:52.339  INFO 15820 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2019-10-18 14:29:52.342  INFO 15820 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-10-18 14:29:52.344  INFO 15820 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2019-10-18 14:29:52.421  INFO 15820 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-10-18 14:29:52.675  INFO 15820 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-10-18 14:29:53.029  INFO 15820 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-10-18 14:29:53.032  INFO 15820 --- [main] o.h.t.BasicTypeRegistry                  : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@f92308fd
+2019-10-18 14:29:53.195  WARN 15820 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: harsh.rane.model.FullPatientDetails
+2019-10-18 14:29:53.243  INFO 15820 --- [main] o.a.c.c.StandardService                  : Stopping service Tomcat
+2019-10-18 14:29:53.299  INFO 15820 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-10-18 14:29:53.307 ERROR 15820 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: harsh.rane.model.FullPatientDetails
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081) ~[spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856) ~[spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) ~[spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at harsh.rane.KafkaSinkMain.main(KafkaSinkMain.java:11) [classes/:?]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: harsh.rane.model.FullPatientDetails
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:265) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:717) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:245) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:222) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:265) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) ~[spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) ~[spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) ~[spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) ~[spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	... 16 more
+
+2019-10-18 14:48:46.350  INFO 9740 --- [main] h.r.KafkaSinkMain                        : Starting KafkaSinkMain on PUNITP322464D with PID 9740 (D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink\target\classes started by harshatej.rane in D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink)
+2019-10-18 14:48:46.585  INFO 9740 --- [main] h.r.KafkaSinkMain                        : No active profile set, falling back to default profiles: default
+2019-10-18 14:48:46.750  INFO 9740 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@167434b: startup date [Fri Oct 18 14:48:46 IST 2019]; root of context hierarchy
+2019-10-18 14:48:48.819  INFO 9740 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$de7d1495] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 14:48:49.141  INFO 9740 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$acb0312] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 14:48:49.644  INFO 9740 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 14:48:49.663  INFO 9740 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-10-18 14:48:49.667  INFO 9740 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-10-18 14:48:49.927  INFO 9740 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-18 14:48:49.928  INFO 9740 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3194 ms
+2019-10-18 14:48:50.263  INFO 9740 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-18 14:48:50.272  INFO 9740 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-18 14:48:50.273  INFO 9740 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-18 14:48:50.274  INFO 9740 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-18 14:48:50.275  INFO 9740 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-18 14:48:50.335  WARN 9740 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2019-10-18 14:48:50.339  INFO 9740 --- [main] o.a.c.c.StandardService                  : Stopping service Tomcat
+2019-10-18 14:48:50.367  INFO 9740 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-10-18 14:48:50.382 ERROR 9740 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2019-10-18 14:50:48.940  INFO 15908 --- [main] h.r.KafkaSinkMain                        : Starting KafkaSinkMain on PUNITP322464D with PID 15908 (D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink\target\classes started by harshatej.rane in D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink)
+2019-10-18 14:50:48.954  INFO 15908 --- [main] h.r.KafkaSinkMain                        : No active profile set, falling back to default profiles: default
+2019-10-18 14:50:49.263  INFO 15908 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b599ca4: startup date [Fri Oct 18 14:50:49 IST 2019]; root of context hierarchy
+2019-10-18 14:50:51.045  INFO 15908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$6e6d449a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 14:50:51.602  INFO 15908 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 14:50:51.615  INFO 15908 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-10-18 14:50:51.617  INFO 15908 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-10-18 14:50:51.777  INFO 15908 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-18 14:50:51.783  INFO 15908 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2526 ms
+2019-10-18 14:50:52.071  INFO 15908 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-18 14:50:52.078  INFO 15908 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-18 14:50:52.078  INFO 15908 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-18 14:50:52.079  INFO 15908 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-18 14:50:52.080  INFO 15908 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-18 14:50:53.845  INFO 15908 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b599ca4: startup date [Fri Oct 18 14:50:49 IST 2019]; root of context hierarchy
+2019-10-18 14:50:54.159  INFO 15908 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-18 14:50:54.160  INFO 15908 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-18 14:50:54.288  INFO 15908 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 14:50:54.289  INFO 15908 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 14:50:54.438  INFO 15908 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 14:50:55.415  INFO 15908 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-18 14:50:55.438  INFO 15908 --- [main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 0
+2019-10-18 14:50:55.498  INFO 15908 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 14:50:55.569  INFO 15908 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 14:50:55.995  INFO 15908 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version : 0.10.1.1
+2019-10-18 14:50:55.995  INFO 15908 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : f10ef2720b03b247
+2019-10-18 14:50:56.324  INFO 15908 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-18 14:50:56.356  INFO 15908 --- [main] h.r.KafkaSinkMain                        : Started KafkaSinkMain in 8.806 seconds (JVM running for 10.807)
+2019-10-18 14:50:57.553  INFO 15908 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 14:50:57.570  INFO 15908 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Revoking previously assigned partitions [] for group group_id
+2019-10-18 14:50:57.571  INFO 15908 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2019-10-18 14:50:57.572  INFO 15908 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : (Re-)joining group group_id
+2019-10-18 14:50:59.107  INFO 15908 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Successfully joined group group_id with generation 1
+2019-10-18 14:50:59.108  INFO 15908 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Setting newly assigned partitions [topic2-0] for group group_id
+2019-10-18 14:50:59.191  INFO 15908 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[topic2-0]
+2019-10-18 14:52:37.356  INFO 15908 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-18 14:52:37.356  INFO 15908 --- [RMI TCP Connection(14)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b599ca4: startup date [Fri Oct 18 14:50:49 IST 2019]; root of context hierarchy
+2019-10-18 14:52:37.385  INFO 15908 --- [RMI TCP Connection(14)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2019-10-18 14:52:38.144  INFO 15908 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2019-10-18 14:52:38.146  INFO 15908 --- [RMI TCP Connection(14)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-10-18 16:20:36.300  INFO 14276 --- [main] h.r.KafkaSinkMain                        : Starting KafkaSinkMain on PUNITP322464D with PID 14276 (D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink\target\classes started by harshatej.rane in D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink)
+2019-10-18 16:20:36.347  INFO 14276 --- [main] h.r.KafkaSinkMain                        : No active profile set, falling back to default profiles: default
+2019-10-18 16:20:36.681  INFO 14276 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fa21bde3: startup date [Fri Oct 18 16:20:36 IST 2019]; root of context hierarchy
+2019-10-18 16:20:42.807  INFO 14276 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$b8ce945] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 16:20:44.198  INFO 14276 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 16:20:44.236  INFO 14276 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-10-18 16:20:44.238  INFO 14276 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-10-18 16:20:44.975  INFO 14276 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-18 16:20:44.976  INFO 14276 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 8295 ms
+2019-10-18 16:20:45.505  INFO 14276 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-18 16:20:45.517  INFO 14276 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-18 16:20:45.517  INFO 14276 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-18 16:20:45.518  INFO 14276 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-18 16:20:45.519  INFO 14276 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-18 16:20:46.683  INFO 14276 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fa21bde3: startup date [Fri Oct 18 16:20:36 IST 2019]; root of context hierarchy
+2019-10-18 16:20:46.876  INFO 14276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-18 16:20:46.878  INFO 14276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-18 16:20:46.976  INFO 14276 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 16:20:46.976  INFO 14276 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 16:20:47.027  INFO 14276 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 16:20:48.187  INFO 14276 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-18 16:20:48.202  INFO 14276 --- [main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 0
+2019-10-18 16:20:48.226  INFO 14276 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 16:20:48.233  INFO 14276 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 16:20:48.697  INFO 14276 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version : 0.10.1.1
+2019-10-18 16:20:48.697  INFO 14276 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : f10ef2720b03b247
+2019-10-18 16:20:48.848  INFO 14276 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-18 16:20:48.860  INFO 14276 --- [main] h.r.KafkaSinkMain                        : Started KafkaSinkMain in 13.69 seconds (JVM running for 15.639)
+2019-10-18 16:20:48.922  INFO 14276 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 16:20:48.926  INFO 14276 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Revoking previously assigned partitions [] for group group_id
+2019-10-18 16:20:48.926  INFO 14276 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2019-10-18 16:20:48.926  INFO 14276 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : (Re-)joining group group_id
+2019-10-18 16:20:48.991  INFO 14276 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Successfully joined group group_id with generation 3
+2019-10-18 16:20:48.992  INFO 14276 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Setting newly assigned partitions [topic2-0] for group group_id
+2019-10-18 16:20:49.002  INFO 14276 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[topic2-0]
+2019-10-18 16:21:14.082 ERROR 14276 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-listener-1] o.s.k.l.LoggingErrorHandler              : Error while processing: ConsumerRecord(topic = topic2, partition = 0, offset = 9, CreateTime = 1571395873971, checksum = 1082085412, serialized key size = 4, serialized value size = 23, key = zkey, value = 101|Infosys|Development)
+
+org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method could not be invoked with the incoming message
+Endpoint handler details:
+Method [public void harsh.rane.service.KafkaConsumer.consumeJoin(java.lang.String,java.lang.Long,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String)]
+Bean [harsh.rane.service.KafkaConsumer@1f611d9e]; nested exception is org.springframework.messaging.MessageHandlingException: Missing header 'X-Custom-Header' for method parameter type [class java.lang.String], failedMessage=GenericMessage [payload=101|Infosys|Development, headers={kafka_offset=9, kafka_receivedMessageKey=zkey, kafka_receivedPartitionId=0, kafka_receivedTopic=topic2}]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:183) ~[spring-kafka-1.1.3.RELEASE.jar:?]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:72) ~[spring-kafka-1.1.3.RELEASE.jar:?]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:47) ~[spring-kafka-1.1.3.RELEASE.jar:?]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:764) [spring-kafka-1.1.3.RELEASE.jar:?]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:708) [spring-kafka-1.1.3.RELEASE.jar:?]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.access$2500(KafkaMessageListenerContainer.java:230) [spring-kafka-1.1.3.RELEASE.jar:?]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer$ListenerInvoker.run(KafkaMessageListenerContainer.java:975) [spring-kafka-1.1.3.RELEASE.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_202]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_202]
+	at java.lang.Thread.run(Thread.java:813) [?:1.8.0_202]
+Caused by: org.springframework.messaging.MessageHandlingException: Missing header 'X-Custom-Header' for method parameter type [class java.lang.String]
+	at org.springframework.messaging.handler.annotation.support.HeaderMethodArgumentResolver.handleMissingValue(HeaderMethodArgumentResolver.java:100) ~[spring-messaging-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.messaging.handler.annotation.support.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:103) ~[spring-messaging-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:112) ~[spring-messaging-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:135) ~[spring-messaging-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:107) ~[spring-messaging-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-1.1.3.RELEASE.jar:?]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:174) ~[spring-kafka-1.1.3.RELEASE.jar:?]
+	... 9 more
+
+2019-10-18 16:37:15.213  INFO 14276 --- [RMI TCP Connection(43)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-18 16:37:15.235  INFO 14276 --- [RMI TCP Connection(43)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fa21bde3: startup date [Fri Oct 18 16:20:36 IST 2019]; root of context hierarchy
+2019-10-18 16:37:15.264  INFO 14276 --- [RMI TCP Connection(43)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2019-10-18 16:37:16.011  INFO 14276 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2019-10-18 16:37:16.015  INFO 14276 --- [RMI TCP Connection(43)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-10-18 16:42:56.704  INFO 8504 --- [main] h.r.KafkaSinkMain                        : Starting KafkaSinkMain on PUNITP322464D with PID 8504 (D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink\target\classes started by harshatej.rane in D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink)
+2019-10-18 16:42:56.790  INFO 8504 --- [main] h.r.KafkaSinkMain                        : No active profile set, falling back to default profiles: default
+2019-10-18 16:42:56.955  INFO 8504 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@99358e87: startup date [Fri Oct 18 16:42:56 IST 2019]; root of context hierarchy
+2019-10-18 16:42:58.934  INFO 8504 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$4a62b47a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 16:42:59.558  INFO 8504 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 16:42:59.573  INFO 8504 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-10-18 16:42:59.575  INFO 8504 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-10-18 16:42:59.764  INFO 8504 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-18 16:42:59.765  INFO 8504 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2815 ms
+2019-10-18 16:43:00.207  INFO 8504 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-18 16:43:00.211  INFO 8504 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-18 16:43:00.211  INFO 8504 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-18 16:43:00.212  INFO 8504 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-18 16:43:00.212  INFO 8504 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-18 16:43:01.025  INFO 8504 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@99358e87: startup date [Fri Oct 18 16:42:56 IST 2019]; root of context hierarchy
+2019-10-18 16:43:01.169  INFO 8504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-18 16:43:01.171  INFO 8504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-18 16:43:01.284  INFO 8504 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 16:43:01.284  INFO 8504 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 16:43:01.392  INFO 8504 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 16:43:02.622  INFO 8504 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-18 16:43:02.631  INFO 8504 --- [main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 0
+2019-10-18 16:43:02.809  INFO 8504 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 16:43:02.906  INFO 8504 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 16:43:03.167  INFO 8504 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version : 0.10.1.1
+2019-10-18 16:43:03.167  INFO 8504 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : f10ef2720b03b247
+2019-10-18 16:43:03.257  INFO 8504 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-18 16:43:03.270  INFO 8504 --- [main] h.r.KafkaSinkMain                        : Started KafkaSinkMain in 7.19 seconds (JVM running for 8.992)
+2019-10-18 16:43:03.778  INFO 8504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 16:43:03.786  INFO 8504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Revoking previously assigned partitions [] for group group_id
+2019-10-18 16:43:03.787  INFO 8504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2019-10-18 16:43:03.787  INFO 8504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : (Re-)joining group group_id
+2019-10-18 16:43:03.987  INFO 8504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Successfully joined group group_id with generation 5
+2019-10-18 16:43:03.992  INFO 8504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Setting newly assigned partitions [topic2-0] for group group_id
+2019-10-18 16:43:04.025  INFO 8504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[topic2-0]
+2019-10-18 16:43:36.505  INFO 8504 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-18 16:43:36.506  INFO 8504 --- [RMI TCP Connection(8)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@99358e87: startup date [Fri Oct 18 16:42:56 IST 2019]; root of context hierarchy
+2019-10-18 16:43:36.508  INFO 8504 --- [RMI TCP Connection(8)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2019-10-18 16:43:36.988  INFO 8504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2019-10-18 16:43:36.991  INFO 8504 --- [RMI TCP Connection(8)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-10-18 16:44:47.061  INFO 12380 --- [main] h.r.KafkaSinkMain                        : Starting KafkaSinkMain on PUNITP322464D with PID 12380 (D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink\target\classes started by harshatej.rane in D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink)
+2019-10-18 16:44:47.071  INFO 12380 --- [main] h.r.KafkaSinkMain                        : No active profile set, falling back to default profiles: default
+2019-10-18 16:44:51.668  INFO 12380 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72cff01b: startup date [Fri Oct 18 16:44:51 IST 2019]; root of context hierarchy
+2019-10-18 16:44:57.117  INFO 12380 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$a9ba50e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 16:44:57.975  INFO 12380 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 16:44:58.000  INFO 12380 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-10-18 16:44:58.002  INFO 12380 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-10-18 16:44:58.449  INFO 12380 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-18 16:44:58.450  INFO 12380 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 6825 ms
+2019-10-18 16:44:59.218  INFO 12380 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-18 16:44:59.224  INFO 12380 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-18 16:44:59.225  INFO 12380 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-18 16:44:59.226  INFO 12380 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-18 16:44:59.226  INFO 12380 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-18 16:45:02.100  INFO 12380 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72cff01b: startup date [Fri Oct 18 16:44:51 IST 2019]; root of context hierarchy
+2019-10-18 16:45:02.879  INFO 12380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-18 16:45:02.881  INFO 12380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-18 16:45:02.995  INFO 12380 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 16:45:02.996  INFO 12380 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 16:45:03.090  INFO 12380 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 16:45:03.624  INFO 12380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-18 16:45:03.637  INFO 12380 --- [main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 0
+2019-10-18 16:45:03.718  INFO 12380 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 16:45:03.780  INFO 12380 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 16:45:03.927  INFO 12380 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version : 0.10.1.1
+2019-10-18 16:45:03.928  INFO 12380 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : f10ef2720b03b247
+2019-10-18 16:45:04.083  INFO 12380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 16:45:04.088  INFO 12380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Revoking previously assigned partitions [] for group group_id
+2019-10-18 16:45:04.089  INFO 12380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2019-10-18 16:45:04.090  INFO 12380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : (Re-)joining group group_id
+2019-10-18 16:45:04.102  INFO 12380 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-18 16:45:04.120  INFO 12380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Successfully joined group group_id with generation 7
+2019-10-18 16:45:04.122  INFO 12380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Setting newly assigned partitions [topic2-0] for group group_id
+2019-10-18 16:45:04.130  INFO 12380 --- [main] h.r.KafkaSinkMain                        : Started KafkaSinkMain in 18.031 seconds (JVM running for 19.386)
+2019-10-18 16:45:04.137  INFO 12380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[topic2-0]
+2019-10-18 16:46:14.207  INFO 12380 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-18 16:46:14.207  INFO 12380 --- [RMI TCP Connection(8)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72cff01b: startup date [Fri Oct 18 16:44:51 IST 2019]; root of context hierarchy
+2019-10-18 16:46:14.225  INFO 12380 --- [RMI TCP Connection(8)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2019-10-18 16:46:14.769  INFO 12380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2019-10-18 16:46:14.773  INFO 12380 --- [RMI TCP Connection(8)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-10-18 17:37:01.587  INFO 9928 --- [main] h.r.KafkaSinkMain                        : Starting KafkaSinkMain on PUNITP322464D with PID 9928 (D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink\target\classes started by harshatej.rane in D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink)
+2019-10-18 17:37:01.587  INFO 9928 --- [main] h.r.KafkaSinkMain                        : No active profile set, falling back to default profiles: default
+2019-10-18 17:37:01.869  INFO 9928 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d289cfd6: startup date [Fri Oct 18 17:37:01 IST 2019]; root of context hierarchy
+2019-10-18 17:37:04.728  INFO 9928 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$d3c7c155] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 17:37:05.947  INFO 9928 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 17:37:05.962  INFO 9928 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-10-18 17:37:05.962  INFO 9928 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-10-18 17:37:06.259  INFO 9928 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-18 17:37:06.259  INFO 9928 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 4390 ms
+2019-10-18 17:37:06.728  INFO 9928 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-18 17:37:06.775  INFO 9928 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-18 17:37:06.775  INFO 9928 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-18 17:37:06.775  INFO 9928 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-18 17:37:06.775  INFO 9928 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-18 17:37:08.728  INFO 9928 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d289cfd6: startup date [Fri Oct 18 17:37:01 IST 2019]; root of context hierarchy
+2019-10-18 17:37:09.009  INFO 9928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-18 17:37:09.009  INFO 9928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-18 17:37:09.150  INFO 9928 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 17:37:09.150  INFO 9928 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 17:37:09.259  INFO 9928 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 17:37:09.853  INFO 9928 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-18 17:37:09.853  INFO 9928 --- [main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 0
+2019-10-18 17:37:09.931  INFO 9928 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 17:37:09.993  INFO 9928 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 17:37:10.962  INFO 9928 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version : 0.10.1.1
+2019-10-18 17:37:10.962  INFO 9928 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : f10ef2720b03b247
+2019-10-18 17:37:11.165  INFO 9928 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-18 17:37:11.165  INFO 9928 --- [main] h.r.KafkaSinkMain                        : Started KafkaSinkMain in 10.5 seconds (JVM running for 11.953)
+2019-10-18 17:37:12.649  INFO 9928 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:37:12.649  INFO 9928 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Revoking previously assigned partitions [] for group group_id
+2019-10-18 17:37:12.649  INFO 9928 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2019-10-18 17:37:12.649  INFO 9928 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : (Re-)joining group group_id
+2019-10-18 17:37:15.227  INFO 9928 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Successfully joined group group_id with generation 9
+2019-10-18 17:37:15.227  INFO 9928 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Setting newly assigned partitions [topic2-0] for group group_id
+2019-10-18 17:37:15.259  INFO 9928 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[topic2-0]
+2019-10-18 17:38:19.155  INFO 9928 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-18 17:38:19.155  INFO 9928 --- [RMI TCP Connection(8)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d289cfd6: startup date [Fri Oct 18 17:37:01 IST 2019]; root of context hierarchy
+2019-10-18 17:38:19.202  INFO 9928 --- [RMI TCP Connection(8)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2019-10-18 17:38:19.764  INFO 9928 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2019-10-18 17:38:19.764  INFO 9928 --- [RMI TCP Connection(8)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-10-18 17:39:17.961  INFO 14724 --- [main] h.r.KafkaSinkMain                        : Starting KafkaSinkMain on PUNITP322464D with PID 14724 (D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink\target\classes started by harshatej.rane in D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink)
+2019-10-18 17:39:18.164  INFO 14724 --- [main] h.r.KafkaSinkMain                        : No active profile set, falling back to default profiles: default
+2019-10-18 17:39:18.508  INFO 14724 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a74d46e: startup date [Fri Oct 18 17:39:18 IST 2019]; root of context hierarchy
+2019-10-18 17:39:22.805  INFO 14724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$ead21304] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 17:39:23.664  INFO 14724 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 17:39:23.695  INFO 14724 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-10-18 17:39:23.695  INFO 14724 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-10-18 17:39:23.945  INFO 14724 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-18 17:39:23.945  INFO 14724 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 5546 ms
+2019-10-18 17:39:24.305  INFO 14724 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-18 17:39:24.320  INFO 14724 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-18 17:39:24.320  INFO 14724 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-18 17:39:24.320  INFO 14724 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-18 17:39:24.320  INFO 14724 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-18 17:39:25.242  INFO 14724 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a74d46e: startup date [Fri Oct 18 17:39:18 IST 2019]; root of context hierarchy
+2019-10-18 17:39:25.352  INFO 14724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-18 17:39:25.352  INFO 14724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-18 17:39:25.414  INFO 14724 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 17:39:25.414  INFO 14724 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 17:39:25.508  INFO 14724 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 17:39:26.211  INFO 14724 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-18 17:39:26.227  INFO 14724 --- [main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 0
+2019-10-18 17:39:26.289  INFO 14724 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 17:39:26.305  INFO 14724 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 17:39:26.680  INFO 14724 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version : 0.10.1.1
+2019-10-18 17:39:26.680  INFO 14724 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : f10ef2720b03b247
+2019-10-18 17:39:26.867  INFO 14724 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-18 17:39:26.867  INFO 14724 --- [main] h.r.KafkaSinkMain                        : Started KafkaSinkMain in 10.406 seconds (JVM running for 15.249)
+2019-10-18 17:39:26.898  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:39:26.898  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Revoking previously assigned partitions [] for group group_id
+2019-10-18 17:39:26.898  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2019-10-18 17:39:26.898  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : (Re-)joining group group_id
+2019-10-18 17:39:26.977  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Successfully joined group group_id with generation 11
+2019-10-18 17:39:26.977  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Setting newly assigned partitions [topic2-0] for group group_id
+2019-10-18 17:39:27.023  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[topic2-0]
+2019-10-18 17:39:33.746  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-listener-1] h.r.s.KafkaConsumer                      : - - - - - - - - - - - - - - -
+2019-10-18 17:39:33.747  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-listener-1] h.r.s.KafkaConsumer                      : received message='101|Infosys|Development'
+2019-10-18 17:39:33.747  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-listener-1] h.r.s.KafkaConsumer                      : topic: topic2
+2019-10-18 17:39:33.747  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-listener-1] h.r.s.KafkaConsumer                      : message key: zkey
+2019-10-18 17:39:33.748  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-listener-1] h.r.s.KafkaConsumer                      : partition id: 0
+2019-10-18 17:39:33.748  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-listener-1] h.r.s.KafkaConsumer                      : offset: 13
+2019-10-18 17:48:41.913  INFO 14724 --- [kafka-coordinator-heartbeat-thread | group_id] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:09.556  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.NetworkClient                    : Error while fetching metadata with correlation id 1371 : {topic2=LEADER_NOT_AVAILABLE}
+2019-10-18 17:49:09.681  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.NetworkClient                    : Error while fetching metadata with correlation id 1372 : {topic2=LEADER_NOT_AVAILABLE}
+2019-10-18 17:49:09.790  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.NetworkClient                    : Error while fetching metadata with correlation id 1373 : {topic2=LEADER_NOT_AVAILABLE}
+2019-10-18 17:49:10.072  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:10.072  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:10.072  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:10.103  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:10.197  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:10.197  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:10.212  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:10.322  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:10.322  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:10.337  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:10.447  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:10.447  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:10.447  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:10.556  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:10.556  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:10.572  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:10.665  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:10.665  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:10.665  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:10.775  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:10.775  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:10.790  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:10.900  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:10.900  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:10.931  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:11.009  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:11.009  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:11.025  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:11.118  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:11.118  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:11.118  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:11.228  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:11.228  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:11.243  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:11.337  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:11.337  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:11.337  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:11.447  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:11.447  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:11.447  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:11.572  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:11.572  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:11.587  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:11.681  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:11.681  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:11.681  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:11.790  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:11.790  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:11.806  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:11.900  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:11.900  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:11.900  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:12.009  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:12.009  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:12.009  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:12.118  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:12.118  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:12.118  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:12.228  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:12.228  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:12.228  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:12.337  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:12.337  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:12.337  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:12.447  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:12.447  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:12.447  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:12.556  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:12.556  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:12.587  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:12.665  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:12.665  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:12.665  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:12.775  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:12.775  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:12.790  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:12.884  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:12.884  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:12.884  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:13.009  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:13.009  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:13.009  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:13.118  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:13.118  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:13.118  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:13.228  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:13.228  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:13.228  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:13.384  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:13.384  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:13.384  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:13.587  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:13.587  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:13.587  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:13.697  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:13.697  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:13.697  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:13.806  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:13.806  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:13.806  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:13.915  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:13.915  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:13.931  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:14.025  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:14.025  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:14.025  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:14.212  INFO 14724 --- [kafka-coordinator-heartbeat-thread | group_id] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:14.212  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:14.243  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:14.321  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:14.321  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:14.353  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:14.431  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:14.431  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:14.431  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:14.587  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:14.587  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:14.587  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:14.696  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:14.696  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:14.696  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:14.806  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:14.806  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:14.806  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:14.915  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:14.915  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:14.978  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:15.025  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:15.243  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:15.306  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:15.353  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Marking the coordinator localhost:9092 (id: 2147483647 rack: null) dead for group group_id
+2019-10-18 17:49:15.353  WARN 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Auto offset commit failed for group group_id: Offset commit failed with a retriable exception. You should retry committing offsets.
+2019-10-18 17:49:15.868  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:49:55.895  INFO 14724 --- [RMI TCP Connection(27)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-18 17:49:55.895  INFO 14724 --- [RMI TCP Connection(27)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a74d46e: startup date [Fri Oct 18 17:39:18 IST 2019]; root of context hierarchy
+2019-10-18 17:49:56.161  INFO 14724 --- [RMI TCP Connection(27)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2019-10-18 17:49:56.770  INFO 14724 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2019-10-18 17:49:56.770  INFO 14724 --- [RMI TCP Connection(27)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-10-18 17:50:35.638  INFO 13396 --- [main] h.r.KafkaSinkMain                        : Starting KafkaSinkMain on PUNITP322464D with PID 13396 (D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink\target\classes started by harshatej.rane in D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink)
+2019-10-18 17:50:35.653  INFO 13396 --- [main] h.r.KafkaSinkMain                        : No active profile set, falling back to default profiles: default
+2019-10-18 17:50:35.825  INFO 13396 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@deb33423: startup date [Fri Oct 18 17:50:35 IST 2019]; root of context hierarchy
+2019-10-18 17:50:37.185  INFO 13396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$671d8713] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 17:50:37.685  INFO 13396 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 17:50:37.700  INFO 13396 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-10-18 17:50:37.700  INFO 13396 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-10-18 17:50:37.888  INFO 13396 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-18 17:50:37.888  INFO 13396 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2078 ms
+2019-10-18 17:50:38.388  INFO 13396 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-18 17:50:38.388  INFO 13396 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-18 17:50:38.388  INFO 13396 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-18 17:50:38.388  INFO 13396 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-18 17:50:38.388  INFO 13396 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-18 17:50:39.513  INFO 13396 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@deb33423: startup date [Fri Oct 18 17:50:35 IST 2019]; root of context hierarchy
+2019-10-18 17:50:39.638  INFO 13396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-18 17:50:39.638  INFO 13396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-18 17:50:39.700  INFO 13396 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 17:50:39.700  INFO 13396 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 17:50:39.763  INFO 13396 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 17:50:40.356  INFO 13396 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-18 17:50:40.372  INFO 13396 --- [main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 0
+2019-10-18 17:50:40.388  INFO 13396 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 17:50:40.481  INFO 13396 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 17:50:40.575  INFO 13396 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version : 0.10.1.1
+2019-10-18 17:50:40.575  INFO 13396 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : f10ef2720b03b247
+2019-10-18 17:50:41.450  INFO 13396 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-18 17:50:41.450  INFO 13396 --- [main] h.r.KafkaSinkMain                        : Started KafkaSinkMain in 6.375 seconds (JVM running for 7.531)
+2019-10-18 17:50:41.481  INFO 13396 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:50:41.481  INFO 13396 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Revoking previously assigned partitions [] for group group_id
+2019-10-18 17:50:41.481  INFO 13396 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2019-10-18 17:50:41.481  INFO 13396 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : (Re-)joining group group_id
+2019-10-18 17:50:41.544  INFO 13396 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Successfully joined group group_id with generation 13
+2019-10-18 17:50:41.544  INFO 13396 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Setting newly assigned partitions [topic2-0] for group group_id
+2019-10-18 17:50:41.575  INFO 13396 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[topic2-0]
+2019-10-18 17:56:37.702  INFO 13396 --- [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-18 17:56:37.717  INFO 13396 --- [RMI TCP Connection(21)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@deb33423: startup date [Fri Oct 18 17:50:35 IST 2019]; root of context hierarchy
+2019-10-18 17:56:37.733  INFO 13396 --- [RMI TCP Connection(21)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2019-10-18 17:56:38.045  INFO 13396 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2019-10-18 17:56:38.045  INFO 13396 --- [RMI TCP Connection(21)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-10-18 17:58:08.784  INFO 13944 --- [main] h.r.KafkaSinkMain                        : Starting KafkaSinkMain on PUNITP322464D with PID 13944 (D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink\target\classes started by harshatej.rane in D:\SpingWork\KafkaSink-master\KafkaSink-master\KafkaSink)
+2019-10-18 17:58:08.800  INFO 13944 --- [main] h.r.KafkaSinkMain                        : No active profile set, falling back to default profiles: default
+2019-10-18 17:58:08.987  INFO 13944 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ed8645: startup date [Fri Oct 18 17:58:08 IST 2019]; root of context hierarchy
+2019-10-18 17:58:10.378  INFO 13944 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$21d34e3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 17:58:11.175  INFO 13944 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 17:58:11.191  INFO 13944 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-10-18 17:58:11.191  INFO 13944 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-10-18 17:58:11.441  INFO 13944 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-18 17:58:11.441  INFO 13944 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2469 ms
+2019-10-18 17:58:11.956  INFO 13944 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-18 17:58:11.956  INFO 13944 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-18 17:58:11.956  INFO 13944 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-18 17:58:11.972  INFO 13944 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-18 17:58:11.972  INFO 13944 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-18 17:58:12.690  INFO 13944 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ed8645: startup date [Fri Oct 18 17:58:08 IST 2019]; root of context hierarchy
+2019-10-18 17:58:12.800  INFO 13944 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-18 17:58:12.800  INFO 13944 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-18 17:58:12.925  INFO 13944 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 17:58:12.925  INFO 13944 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 17:58:12.987  INFO 13944 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-18 17:58:13.831  INFO 13944 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-18 17:58:13.847  INFO 13944 --- [main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 0
+2019-10-18 17:58:13.878  INFO 13944 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 17:58:14.065  INFO 13944 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-10-18 17:58:14.237  INFO 13944 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version : 0.10.1.1
+2019-10-18 17:58:14.237  INFO 13944 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : f10ef2720b03b247
+2019-10-18 17:58:14.409  INFO 13944 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-18 17:58:14.409  INFO 13944 --- [main] h.r.KafkaSinkMain                        : Started KafkaSinkMain in 6.218 seconds (JVM running for 7.484)
+2019-10-18 17:58:14.440  INFO 13944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Discovered coordinator localhost:9092 (id: 2147483647 rack: null) for group group_id.
+2019-10-18 17:58:14.440  INFO 13944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Revoking previously assigned partitions [] for group group_id
+2019-10-18 17:58:14.440  INFO 13944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2019-10-18 17:58:14.440  INFO 13944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : (Re-)joining group group_id
+2019-10-18 17:58:14.456  INFO 13944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.AbstractCoordinator          : Successfully joined group group_id with generation 15
+2019-10-18 17:58:14.456  INFO 13944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.i.ConsumerCoordinator          : Setting newly assigned partitions [topic2-0] for group group_id
+2019-10-18 17:58:14.472  INFO 13944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[topic2-0]
+2019-10-18 17:58:56.247  INFO 13944 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-18 17:58:56.247  INFO 13944 --- [RMI TCP Connection(8)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ed8645: startup date [Fri Oct 18 17:58:08 IST 2019]; root of context hierarchy
+2019-10-18 17:58:56.247  INFO 13944 --- [RMI TCP Connection(8)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2019-10-18 17:58:56.387  INFO 13944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2019-10-18 17:58:56.387  INFO 13944 --- [RMI TCP Connection(8)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
